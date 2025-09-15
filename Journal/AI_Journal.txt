@@ -4,3 +4,7 @@ correctly in Ex. 5. The rest I did on my own
 
 I asked AI to confirm using max() for the late fee so it wouldn’t go negative (Ex. 6). 
 Also needed help lining up the f-string formatting in Ex. 10.
+
+I used AI once here just to make sure I was printing the type correctly in Ex. 16. 
+I mixed up the comparison operators at first in Ex. 20, so I asked AI just to remind me the 
+right way to write the boolean check
