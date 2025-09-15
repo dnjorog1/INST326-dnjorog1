@@ -1,3 +1,6 @@
 Week 2:
 I checked with AI on how to format the f-string in Ex. 1 and to make sure I was using .strip() 
 correctly in Ex. 5. The rest I did on my own
+
+I asked AI to confirm using max() for the late fee so it wouldn’t go negative (Ex. 6). 
+Also needed help lining up the f-string formatting in Ex. 10.
