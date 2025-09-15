@@ -13,3 +13,5 @@ For Ex. 23, I already knew about .find(), but I wanted to confirm that checking 
 to test if a word is there. In Ex. 25, I just asked AI to make sure combining both comparisons on one line 
 was the cleanest way to do it.
 
+Most of this part felt fine, but I asked AI to confirm the f-string syntax for rounding to two decimals in Ex. 27. 
+For Ex. 30, I just double-checked if using the names none, single, and many for the booleans made sense. 
