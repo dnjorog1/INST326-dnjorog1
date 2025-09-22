@@ -31,6 +31,10 @@ digits start and ignore the dot. The suggestion was to iterate over chars, break
 I asked an AI how to merge two lists by alternating and then append the rest. I was stuck on stopping at the shorter list without an 
 IndexError and how to add the leftovers. The tip was one while for the alternating part, then two small while loops to finish each list.
 
-#28 (index of max via loop)
-No exception, but common logic bug: updating the max value and forgetting to update the index, which prints the wrong name. Starting 
-with max_index = 0 and updating both fixes it.
+#28 – Find index of max without max()
+I used AI because I kept forgetting to track both the max value and its index. The guidance was to set max_index = 0 and max_count = loan_counts[0], 
+loop from 1, and update both when I see a bigger number.
+
+#30 – Menu loop with input()
+I used AI to figure out why my loop wasn’t behaving. I was comparing choice to numbers (1, 2, 3) instead of strings (“1”, “2”, “3”). I also needed a 
+simple pattern for handling invalid choices without breaking the loop.
