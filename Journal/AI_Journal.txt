@@ -15,3 +15,22 @@ was the cleanest way to do it.
 
 Most of this part felt fine, but I asked AI to confirm the f-string syntax for rounding to two decimals in Ex. 27. 
 For Ex. 30, I just double-checked if using the names none, single, and many for the booleans made sense. 
+
+
+
+Week 3/ week 2 excercise:
+#10 Safe remove if present
+I checked with AI after hitting a ValueError. I mixed up remove() (by value) and pop() (by index). The fix was to 
+guard the call: if "Quantum Design" in titles: titles.remove("Quantum Design").
+
+#22 – Parse call number prefix
+I asked an AI how to get characters before the first digit in a string. I wasn’t sure how to stop exactly when 
+digits start and ignore the dot. The suggestion was to iterate over chars, break on the first digit, then keep only the leading letters.
+
+#26 – Merge two shelves
+I asked an AI how to merge two lists by alternating and then append the rest. I was stuck on stopping at the shorter list without an 
+IndexError and how to add the leftovers. The tip was one while for the alternating part, then two small while loops to finish each list.
+
+#28 (index of max via loop)
+No exception, but common logic bug: updating the max value and forgetting to update the index, which prints the wrong name. Starting 
+with max_index = 0 and updating both fixes it.
