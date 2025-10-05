@@ -38,3 +38,32 @@ loop from 1, and update both when I see a bigger number.
 #30 – Menu loop with input()
 I used AI to figure out why my loop wasn’t behaving. I was comparing choice to numbers (1, 2, 3) instead of strings (“1”, “2”, “3”). I also needed a 
 simple pattern for handling invalid choices without breaking the loop.
+
+Week 4/ week 3 excercise:
+
+I noticed I leaned on AI more once the exercises started chaining together or when I wasn’t sure about edge cases. For example:
+
+Exercise 3 (fuzzy book search)- I asked AI to help me make the comparison case-insensitive and ignore extra spaces. I probably 
+could have figured it out eventually, but it saved me time and I was a little stuck.
+
+Exercise 5 (checkout_book) and Exercise 6 (return_book)-  I used AI to confirm my if/else logic and to check that I was updating 
+the is_checked_out list correctly without breaking it.
+
+Exercise 12 (search_titles_contains)-  I wasn’t sure about the case_sensitive part, so I used AI to get a simple example of how to structure it.
+
+Exercise 19 (swap_books)-  This one was trickier since I had to swap values across three lists at once. I asked AI how to do this 
+neatly without messing up the lists.
+
+Exercise 30 (catalog_summary)-  I already had the idea, but I asked AI how to make the output format look clean and was 
+reminded about using "\n".join() for multiple lines.
+
+Week 4 excercise: 
+
+For this week’s assignment, I used AI as a way to guide me through some of the trickier exercises. 
+it was a great help when I wasn’t sure how to implement certain parts.
+
+Exercise 6 (PatronID): I struggled with formatting the ID number so that it always showed six digits. I didn’t remember the exact syntax for padding 
+numbers in Python f-strings. AI showed me the :06d format, which was really useful. 
+
+Exercise 9 (GenreTagger): Working with sets inside a class was new for me. I wasn’t totally sure how to add and remove tags safely or check if a tag existed. 
+AI helped me remember to use .add() and .remove().   
