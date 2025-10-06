@@ -67,3 +67,9 @@ numbers in Python f-strings. AI showed me the :06d format, which was really usef
 
 Exercise 9 (GenreTagger): Working with sets inside a class was new for me. I wasn’t totally sure how to add and remove tags safely or check if a tag existed. 
 AI helped me remember to use .add() and .remove().   
+
+Exercise 10 (Rating): The average score calculation gave me issues at first. I could sum up the scores, but I didn’t know how to handle the case where the list was empty.
+AI reminded me to check if len(self.scores) == 0: and return None before doing the math. That made my solution work correctly.
+
+Exercise 19 (TopicCounter): Sorting the dictionary by values to find the top n topics was confusing. I didn’t know how to use sorted() with a lambda function on the 
+dictionary’s items. AI showed me that pattern, and once I saw it, it clicked.
