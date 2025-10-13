@@ -73,3 +73,24 @@ AI reminded me to check if len(self.scores) == 0: and return None before doing t
 
 Exercise 19 (TopicCounter): Sorting the dictionary by values to find the top n topics was confusing. I didn’t know how to use sorted() with a lambda function on the 
 dictionary’s items. AI showed me that pattern, and once I saw it, it clicked.
+
+
+Week 5 Exercises:
+
+For this week’s coding work, I used AI to help me understand some of the trickier parts of encapsulation and property setters. It was really useful for learning how to apply 
+validation and private attributes the right way.
+
+Exercise 3 (PagedBook): I wasn’t sure how to make sure the number of pages couldn’t be zero or negative. AI reminded me to coerce the input to an integer and then check if it 
+was at least 1 before storing it.
+
+Exercise 6 (FeeSchedule): The part where I had to accept numbers or numeric strings like "0.25" confused me at first. AI showed me that I could safely convert the value with float() 
+and then check if it’s non-negative.
+
+Exercise 11 (SimpleLoan): Comparing the due date to today’s date as strings was strange because I’m used to seeing people use datetime modules. AI helped me see that since both are 
+in "YYYY-MM-DD" format, a normal string comparison works fine.
+
+Exercise 17 (Account): Keeping the balance from ever going negative was tricky. I knew I needed to update it through the setter but didn’t know how to block withdrawals that would 
+cause a negative amount. AI walked me through checking if self.balance - amt < 0: before subtracting it.
+
+Exercise 20 (Settings): Managing multiple boolean flags in one private dictionary was new to me. I didn’t know how to make each flag have its own property while still updating the same dict. 
+AI helped me figure out that I could use bool(value) in each setter to keep things simple and safe.
