@@ -94,3 +94,26 @@ cause a negative amount. AI walked me through checking if self.balance - amt < 0
 
 Exercise 20 (Settings): Managing multiple boolean flags in one private dictionary was new to me. I didn’t know how to make each flag have its own property while still updating the same dict. 
 AI helped me figure out that I could use bool(value) in each setter to keep things simple and safe.
+
+
+
+Week 6 Exercises:
+
+I used AI a few times this week mostly to confirm that my logic and method types were right for the class design exercises. Things started getting a little more detailed with class, static, 
+and instance methods all mixed together, so it helped me make sure I wasn’t mixing them up.
+
+Exercise 3 (IdGenerator):
+I wasn’t sure how to properly use a class attribute that keeps track of the counter for every new ID. I asked AI if it made sense to use @classmethod instead of @staticmethod since I needed to 
+access and update the shared _counter. It confirmed that cls._counter was the right approach and helped me format the method neatly.
+
+Exercise 10 (Library):
+This one was harder because it connected several other classes like Catalog, Member, and Loan. I used AI to help me figure out how to combine them and use IdGenerator.next_id() when registering 
+a new member. I also wanted to make sure I was creating the Loan with today’s date and calculating the due_date correctly, so AI reminded me how to use timedelta(days=policy.loan_days) to add days safely.
+
+Exercise 15 (CirculationStats):
+I got stuck trying to find the average loan length using the checkout_date and due_date. I wasn’t sure how to loop through each Loan object and calculate the total number of days. AI showed me a simple 
+way to use my DateUtils.parse_ymd() helper and then subtract two date objects to get the difference in days. After that, dividing by len(loans) felt easy.
+
+Exercise 19 (Acquisition):
+I wanted to confirm the cleanest way to calculate discounts using a static method. At first, I tried doing it inside the instance method directly, but AI explained how I could call the static method 
+from inside the class, like Acquisition.apply_discount(self.price, pct). It also reminded me to round the result to two decimals with round(..., 2) so the price would look neat.
