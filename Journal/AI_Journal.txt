@@ -117,3 +117,25 @@ way to use my DateUtils.parse_ymd() helper and then subtract two date objects to
 Exercise 19 (Acquisition):
 I wanted to confirm the cleanest way to calculate discounts using a static method. At first, I tried doing it inside the instance method directly, but AI explained how I could call the static method 
 from inside the class, like Acquisition.apply_discount(self.price, pct). It also reminded me to round the result to two decimals with round(..., 2) so the price would look neat.
+
+Week 7 Journal
+
+Exercise 3:
+I asked AI to explain how to raise my own exception instead of just returning True or False. I wasn’t sure how to properly make a custom OverdueLoanError and then catch it in another function. 
+The example it gave made it much easier to understand when to use try/except.
+
+Exercise 5:
+For the late-fee calculation, I wasn’t sure if checking for zero before dividing was the right way or if I should use a try/except. AI reminded me that it’s fine to raise a ZeroDivisionError 
+myself and then show a friendly message in the example.
+
+Exercise 6:
+I needed help remembering how to close a file using try/finally. I usually use with open(), but this time we had to practice finally. AI helped me structure it so the file still 
+closes even if an error happens.
+
+Exercise 10:
+I double-checked with AI about validating a member ID. I knew to strip spaces and make it uppercase, but I forgot how to check if it only contained letters and numbers. AI reminded
+ me to use .isalnum() and that made the code cleaner.
+
+Exercise 12:
+I used AI to confirm the setup for a simple unittest. I wasn’t completely sure how to write the assertRaises part for invalid ISBNs, so I asked for a quick example. Seeing the 
+structure made the test easier to write and helped me understand how unit tests report success.
