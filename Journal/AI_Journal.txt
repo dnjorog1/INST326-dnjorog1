@@ -139,3 +139,13 @@ I double-checked with AI about validating a member ID. I knew to strip spaces an
 Exercise 12:
 I used AI to confirm the setup for a simple unittest. I wasn’t completely sure how to write the assertRaises part for invalid ISBNs, so I asked for a quick example. Seeing the 
 structure made the test easier to write and helped me understand how unit tests report success.
+
+Week 8 Journal
+
+Exercise 3 (AudioBook with super()):
+I asked AI for help on how to properly use super() when overriding the describe() method. I wasn’t sure how to include the base class’s description first and then add my own details for duration. 
+AI reminded me that I could save the parent’s text in a variable like base_info = super().describe() and then just add my own text after it. That helped me understand how super() keeps the code cleaner.
+
+Exercise 4 (ReferenceBook):
+For this one, I used AI to confirm how to block reference books from being checked out. I understood the idea of returning 0 for the loan period, but I wasn’t sure how to connect that to the LoanDesk.checkout() method. 
+AI showed me how to add a simple guard that raises LibraryError("non-circulating") when loan_period_days() is 0. It made sense after I saw the example.
