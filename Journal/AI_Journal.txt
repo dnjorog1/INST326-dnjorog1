@@ -157,3 +157,13 @@ a notifier attribute and call self.notifier.notify() when a checkout happens. Th
 Exercise 20 (Polymorphic Fee Demo):
 I wanted to make sure my end-to-end demo worked right, so I asked AI to double-check if my loop was calling the right method. I wasn’t sure if I needed if statements to tell the book types apart, but AI reminded me that 
 polymorphism already handles that. So, I just used compute_fee(book, days_late) and it worked for all book types automatically. Seeing the different fees print out made it click how powerful polymorphism really is.
+
+Week 9 Journal
+Exercise 5 (Virtual Subclass Registration):
+I asked AI for help because I did not fully understand how a “virtual subclass” works in Python. I knew I wasn’t supposed to inherit from LibraryItem, but I still had to make the class act like one. I was confused 
+about which methods and properties I needed to include so that PDFPamphlet would pass isinstance(pdf, LibraryItem). AI helped me list out the parts that had to be there and reminded me to call LibraryItem.register(PDFPamphlet)
+ at the end. Once I saw the pattern, it made a lot more sense.
+
+Exercise 10 (Abstract daily_late_fee):
+I used AI here because I kept forgetting where the abstract method was supposed to go and how the subclasses were supposed to override it. I understood the idea, but I wasn’t sure how to structure the method in the 
+base class without causing errors. AI explained that the abstract method goes in LibraryItem and each subclass just returns its own fee number. The explanation was simple and helped me finish it without guessing.
