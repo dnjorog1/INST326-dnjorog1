@@ -167,3 +167,12 @@ about which methods and properties I needed to include so that PDFPamphlet would
 Exercise 10 (Abstract daily_late_fee):
 I used AI here because I kept forgetting where the abstract method was supposed to go and how the subclasses were supposed to override it. I understood the idea, but I wasn’t sure how to structure the method in the 
 base class without causing errors. AI explained that the abstract method goes in LibraryItem and each subclass just returns its own fee number. The explanation was simple and helped me finish it without guessing.
+
+Exercise 16 (Swap Implementation Behind the ABC):
+I asked AI for help on this one mainly because of the PDFPamphlet class. When I tried checking it out with LoanDesk, I kept getting attribute errors about missing fields like isbn and borrowable. I wasn’t sure what I was missing. 
+AI helped me fix the class so it actually behaved like a real LibraryItem, even though it wasn’t inheriting from it. After that, the checkout function worked fine.
+
+Exercise 17 (full_label template method):
+I needed help here because I first tried rewriting LibraryItem using the class LibraryItem(LibraryItem) pattern from earlier questions, but the subclasses still didn’t get the new method. I didn’t realize that this created a new 
+subclass instead of updating the original one. AI explained that for this exercise, I had to attach the method directly to the existing LibraryItem using LibraryItem.full_label = full_label. After that, the subclasses started 
+picking up the method, and everything worked the way the instructions said.
