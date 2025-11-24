@@ -190,3 +190,14 @@ inside __post_init__ so the validation still runs. After seeing the pattern once
 Exercise 3 (__post_init__ normalization):
 I needed help remembering the cleanest way to strip hyphens and spaces from the ISBN and then uppercase the title. I also mixed up when __post_init__ actually gets called. AI explained that the dataclass creates the 
 instance first, then runs __post_init__, so any cleanup done there will apply to the already-created object. That helped me avoid putting the cleanup in the wrong place.
+
+Exercise 6 (__delitem__ on Catalog):
+I thought that just deleting from the internal dictionary would automatically make del catalog["111"] work, but I kept getting a TypeError. AI pointed out that I needed to actually define __delitem__ instead of just using remove_book(). 
+Once I added the method and raised the right KeyError, the deletion finally acted like a real container.
+
+Exercise 15 (defensive copy with to_list):
+I wasn’t sure what “defensive copying” meant in this context. I thought returning the actual internal dictionary values was fine, but AI reminded me that if I return the real list, someone could modify it and break the catalog. 
+It helped me realize that returning list(sorted(self._books.values())) protects my internal structure, which is the whole point of the exercise.
+
+Overall, I leaned on AI for the trickier parts involving Python’s data model and how containers behave, but I still wrote the code myself once I understood the patterns. This week definitely felt more “software-engineer-ish,” 
+and having AI clarify the patterns saved me time when I got stuck.
