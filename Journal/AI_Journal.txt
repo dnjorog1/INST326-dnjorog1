@@ -176,3 +176,17 @@ Exercise 17 (full_label template method):
 I needed help here because I first tried rewriting LibraryItem using the class LibraryItem(LibraryItem) pattern from earlier questions, but the subclasses still didn’t get the new method. I didn’t realize that this created a new 
 subclass instead of updating the original one. AI explained that for this exercise, I had to attach the method directly to the existing LibraryItem using LibraryItem.full_label = full_label. After that, the subclasses started 
 picking up the method, and everything worked the way the instructions said.
+
+
+Week 10 AI Journal
+
+For this week’s exercises, I used AI a few times mainly to help me understand some of the new data-model features like properties, @dataclass options, and special methods. A lot of the ideas were new to me, so I checked with AI 
+whenever I wasn’t 100% sure about the pattern.
+
+Exercise 1 (title property validation):
+I already knew how to write a basic @property, but I wasn’t sure how to override the dataclass’s default behavior and replace the title field with a private _title. I asked AI to show me how to re-route the assignment 
+inside __post_init__ so the validation still runs. After seeing the pattern once, the whole idea made a lot more sense.
+
+Exercise 3 (__post_init__ normalization):
+I needed help remembering the cleanest way to strip hyphens and spaces from the ISBN and then uppercase the title. I also mixed up when __post_init__ actually gets called. AI explained that the dataclass creates the 
+instance first, then runs __post_init__, so any cleanup done there will apply to the already-created object. That helped me avoid putting the cleanup in the wrong place.
