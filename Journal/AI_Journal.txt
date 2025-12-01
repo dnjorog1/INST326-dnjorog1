@@ -201,3 +201,8 @@ It helped me realize that returning list(sorted(self._books.values())) protects 
 
 Overall, I leaned on AI for the trickier parts involving Python’s data model and how containers behave, but I still wrote the code myself once I understood the patterns. This week definitely felt more “software-engineer-ish,” 
 and having AI clarify the patterns saved me time when I got stuck.
+
+Week 12 Ai Journal
+
+This week I used AI to brain storm schools I would like to attend for my masters program and which was the best overall with cost, travel, and course strength. I also used Ai to help me create a study guide for my math final coming up,
+it helped create a study plan for not just the math class but for my other classes as well and my projects.
